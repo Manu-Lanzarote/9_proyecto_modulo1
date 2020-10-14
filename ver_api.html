@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ver API</title>
+    <link rel="icon" href="./imagenes/jack.ico" type="favicon" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script>
+      fetch("http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=3")
+        .then((res) => res.json())
+        .then((res) => {
+          console.log(res);
+          console.log(res.results);
+          console.log(res.results[2].href);
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Colores web
+naranja jack    #ee910e
+blanco jack     #bdc4ce */
+
+body {
+  /* Estilos de la imagen de fondo */
+  background-image: url(./imagenes/fondo_pro.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+/* Estilos del header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  height: auto;
+  padding: 5px 100px;
+  position: sticky;
+  top: 0;
+}
+
+/* Menú de navegación */
+.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.scrollmenu a {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ee910e;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.scrollmenu a:hover {
+  background-color: #ee910e;
+  color: white;
+}
+
+#header1 {
+  width: 25%;
+}
+#titulo {
+  width: 25%;
+  color: #ee910e;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: left;
+}
+
+#puppy {
+  color: #c47e1d;
+}
+
+#header2 {
+  width: 50%;
+  text-align: end;
+}
+/* Estilos del main */
+main {
+  padding: 3% 5%;
+  text-align: center;
+  font-size: 18px;
+}
+hr {
+  margin: 70px 0 50px;
+  color: #b1721b;
+}
+#pan {
+  padding: 5px;
+}
+
+#ingredientes {
+  font-size: 25px;
+  background-color: #ddb67f;
+}
+
+button {
+  margin-left: 30px;
+  padding: 1px 10px;
+  font-size: 23px;
+  background-color: #ddb67f;
+  color: #444;
+  box-shadow: #999 1px 1px 0;
+}
+
+.subtit {
+  font-weight: bold;
+}
+a {
+  color: #c47e1d;
+  text-decoration: none;
+}
+a:hover {
+  color: #b1721b;
+}
+#receta i {
+  font-size: 40px;
+  color: #b1721b;
+}
+
+/* Estilos del footer */
+footer {
+  background-color: black;
+  color: #ee910e;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 13px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+#power {
+  font-style: italic;
+}
+#telefono {
+  color: #ddb67f;
+  text-decoration: none;
+}
+
+#iconos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer i {
+  font-size: 30px;
+  color: #ee910e;
+  padding: 0 10px;
+}
+i:hover {
+  color: #ddb67f;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  header {
+    flex-wrap: wrap;
+  }
+  nav {
+    width: 100%;
+  }
+}
