@@ -19,7 +19,7 @@ body {
 /* Estilos del header */
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: black;
   height: auto;
@@ -29,35 +29,37 @@ header {
 }
 
 /* Menú de navegación */
+#menu {
+  width: 100%;
+}
+
 .scrollmenu {
-  overflow: auto;
-  white-space: nowrap;
+  display: flex;
+  justify-content: center;
 }
 
 .scrollmenu a {
-  display: inline-block;
   font-size: 16px;
   font-weight: 600;
   color: #ee910e;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   text-decoration: none;
 }
 
 .scrollmenu a:hover {
   background-color: #ee910e;
   color: white;
+  transition: 500ms;
 }
 
-#header1 {
-  width: 25%;
-}
-#titulo {
-  width: 25%;
+#titulo,
+#logo {
+  width: 50%;
   color: #ee910e;
   font-size: 25px;
   font-weight: 700;
-  text-align: left;
+  text-align: center;
 }
 
 #puppy {
@@ -69,6 +71,7 @@ header {
   text-align: end;
 }
 /* Estilos del main */
+
 main {
   padding: 3% 5%;
   text-align: center;
@@ -82,6 +85,12 @@ hr {
   padding: 5px;
 }
 
+#buscador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #ingredientes {
   font-size: 25px;
   background-color: #ddb67f;
@@ -90,10 +99,12 @@ hr {
 button {
   margin-left: 30px;
   padding: 1px 10px;
+  margin: 10px 30px;
   font-size: 23px;
   background-color: #ddb67f;
   color: #444;
   box-shadow: #999 1px 1px 0;
+  cursor: pointer;
 }
 
 .subtit {
@@ -108,6 +119,21 @@ a:hover {
 }
 #receta i {
   font-size: 40px;
+  color: #b1721b;
+}
+
+#like i {
+  color: #b1721b;
+  padding: 10px;
+}
+#like i:hover {
+  color: #ee910e;
+  background-color: black;
+  border-radius: 50%;
+  transition: 1000ms;
+  cursor: copy;
+}
+#warning {
   color: #b1721b;
 }
 
@@ -146,13 +172,84 @@ footer i {
 i:hover {
   color: #ddb67f;
 }
+/* Index */
+#hero1 {
+  background-image: url(https://www.65ymas.com/uploads/s1/15/43/77/bigstock-a-chalkboard-with-the-text-rea-290427892.jpeg);
+  width: 100%;
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: #c47e1d 5px solid;
+}
+
+/* About us */
+#hero {
+  background-image: url(https://img.apmcdn.org/9e64320b7ae17d9c2dc4ed3011bb392aa42e6745/uncropped/4c5301-splendid-table-fresh-summer-asian-salad-c-eliesa-johnson-lede.jpg);
+  width: 100%;
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: #c47e1d 5px solid;
+}
+
+/* Favoritos */
+#hero2 {
+  background-image: url(https://i.pinimg.com/originals/f0/b6/15/f0b615f78dd809d68ec389f4bc8d94bb.jpg);
+  width: 100%;
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: #c47e1d 5px solid;
+}
+
+.about {
+  display: flex;
+}
+
+#us {
+  color: #b1721b;
+}
+
+.about div {
+  margin: 20px;
+  padding: 10px;
+  text-align: left;
+}
+#postre,
+.postre {
+  width: 800px;
+  height: 300px;
+  max-width: 100%;
+  margin: 20px 0;
+}
+#foto img {
+  width: 180px;
+  height: 130px;
+  border: #b1721b 10px solid;
+  box-shadow: #c47e1d 10px 10px 0;
+}
 
 /* Responsive */
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   header {
     flex-wrap: wrap;
   }
   nav {
     width: 100%;
+  }
+  .about,
+  #buscador {
+    flex-direction: column;
+  }
+  .postre {
+    display: none;
+  }
+  h1 {
+    margin-top: 3%;
+  }
+}
+@media (min-width: 600px) {
+  #postre {
+    display: none;
   }
 }

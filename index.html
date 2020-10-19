@@ -12,20 +12,24 @@
     ></script>
   </head>
   <body>
+    <!-- HEADER -->
     <header>
-      <div id="header1">
+      <div id="logo">
         <a href="./index.html"
           ><img src="./imagenes/icon.png" alt="Logo web"
         /></a>
       </div>
-      <div id="titulo"><span>RECIPE PUPPY</span></div>
-
-      <nav class="scrollmenu">
-        <a href="#">HOMEPAGE</a>
-        <a href="./favoritos.html">FAVORITES</a>
-        <a href="./about_us.html">ABOUT US</a>
-      </nav>
+      <div id="titulo"><a href="./index.html">RECIPE PUPPY</a></div>
+      <div id="menu">
+        <nav class="scrollmenu">
+          <a href="#">HOMEPAGE</a>
+          <a href="./favoritos.html">FAVORITES</a>
+          <a href="./about_us.html">ABOUT_US</a>
+        </nav>
+      </div>
     </header>
+    <!-- FIN DEL HEADER -->
+    <div id="hero1"></div>
     <main>
       <!-- Sección de bienvenida y de solicitud de ingredientes -->
       <section>
@@ -38,12 +42,16 @@
         </div>
 
         <label for="ingredientes"
-          >INTRODUCE TUS INGREDIENTES<br />Sepáralos con una coma. (Ej:
-          beef,onion)</label
+          >INTRODUCE TUS INGREDIENTES<br />Sepáralos con una coma.
+          (Ej:lemon,milk)</label
         ><br /><br /><br />
         <!-- Buscador -->
-        <input type="text" placeholder=" beef,onion" id="ingredientes" />
-        <button onclick="verRecetas()">Ver recetas</button>
+        <section id="buscador">
+          <div>
+            <input type="text" placeholder="lemon,milk" id="ingredientes" />
+          </div>
+          <div><button onclick="verRecetas()">Ver recetas</button></div>
+        </section>
         <hr />
         <!-- Fin del buscador -->
       </section>
