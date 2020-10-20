@@ -91,6 +91,13 @@ hr {
   align-items: center;
 }
 
+#div2 {
+  min-height: 150px;
+}
+#div2 p {
+  margin: 10px 0 30px;
+}
+
 #ingredientes {
   font-size: 25px;
   background-color: #ddb67f;
