@@ -1,7 +1,12 @@
 //Creo una función para obtener la información solicitada a la API y a la que llamré en HTML con
 // <button onclick="verRecetas()">Ver recetas</button>
 const arrayVacio = [];
-const favoritos = [];
+let favoritos;
+if (localStorage.length === 0) {
+  favoritos = [];
+} else {
+  favoritos = JSON.parse(localStorage.getItem("favoritos"));
+}
 
 function verRecetas() {
   //Recojo los datos del input y los guardo en una variable
@@ -53,7 +58,7 @@ function verRecetas() {
         }
 
         //Por último, queda devolver los resultados de la consulta, por lo que he creado en HTML el div:
-        //  <div id="receta">DESCRIPCIÓN</div> donde los insertaré.
+        //  <div id="receta"><i class="far fa-arrow-alt-circle-down"></i></div> donde los insertaré.
         document.getElementById("receta").innerHTML = recetas;
         //console.log(recetas);
       }
